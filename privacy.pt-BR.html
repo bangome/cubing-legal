@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+  번역본(편의 번역) — 한국어 원본은 public/privacy.html. 불일치 시 한국어판이 우선한다(본문 상단 고지).
+  원본을 고치면 번역본 6종도 함께 고친다. 미러 사본(github.com/bangome/cubing-legal)도 같다.
+  사본은 절대경로 링크가 상대경로로 바뀌어 있다(프로젝트 Pages는 /cubing-legal/ 하위).
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Cubing</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 24px 20px 64px;
+    background: #101018; color: #e8e8f0;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    line-height: 1.7; font-size: 15px;
+    max-width: 720px; margin-inline: auto;
+  }
+  h1 { font-size: 22px; margin: 8px 0 4px; }
+  h2 { font-size: 16px; margin: 32px 0 8px; color: #ffd23d; }
+  p, li { color: #c8c8d8; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #333346; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #1a1a2a; color: #e8e8f0; }
+  .meta { color: #8888a0; font-size: 13px; }
+  a { color: #6ec6ff; }
+  .back { display: inline-block; margin-bottom: 16px; color: #8888a0; text-decoration: none; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="Idioma">
+  <a href="privacy.html" lang="ko" hreflang="ko">한국어</a>
+  <a href="privacy.en.html" lang="en" hreflang="en">English</a>
+  <a href="privacy.ja.html" lang="ja" hreflang="ja">日本語</a>
+  <a href="privacy.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <a href="privacy.zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+  <a href="privacy.es.html" lang="es" hreflang="es">Español</a>
+  <strong aria-current="page" lang="pt-BR">Português (Brasil)</strong>
+</nav>
+<a class="back" href="./">&larr; Voltar para o Cubing</a>
+<h1>Política de Privacidade</h1>
+<p class="meta">Data de vigência: 2026-09-29 · Versão 1.4</p>
+<p class="notice">Esta é uma tradução fornecida por conveniência. Em caso de divergência entre esta tradução e a versão em coreano, prevalecerá a versão em coreano. <a href="privacy.html" lang="ko" hreflang="ko">Versão em coreano (한국어)</a></p>
+
+<p>O Cubing (doravante, o "Serviço") é um app para iOS e Android operado pelo operador individual <strong>Jinhwa Jung</strong> (doravante, o "operador"). O operador cumpre a Lei de Proteção de Informações Pessoais da República da Coreia e demais legislações aplicáveis, e trata as informações pessoais dos usuários conforme descrito a seguir.</p>
+
+<h2>1. Informações pessoais coletadas</h2>
+<table>
+  <tr><th>Categoria</th><th>Itens</th><th>Momento da coleta</th></tr>
+  <tr><td>Informações da conta</td><td>E-mail e identificador de perfil da conta Google ou Apple</td><td>Ao entrar com Google ou Apple</td></tr>
+  <tr><td>Informações do perfil</td><td>Apelido, país (opcional)</td><td>Ao configurar o perfil</td></tr>
+  <tr><td>Registros de jogo</td><td>Registros de resolução, resultados de partidas, pontuação (rating), progresso</td><td>Durante o uso do Serviço</td></tr>
+  <tr><td>Recurso de amigos</td><td>Lista de amigos, registro de convites para partidas amistosas<br><span class="meta">O Serviço não oferece um recurso para os usuários escreverem suas próprias mensagens (chat); o único conteúdo trocado são os convites para partidas gerados pelo Serviço</span></td><td>Ao adicionar um amigo ou convidar para uma partida amistosa</td></tr>
+  <tr><td>Dados de vinculação com a WCA</td><td>ID da WCA (World Cube Association), nome real registrado na WCA, URL da imagem de perfil<br><span class="meta">Coletados somente se o usuário optar por vincular a conta, e excluídos imediatamente ao desvincular</span></td><td>Ao vincular a conta da WCA</td></tr>
+  <tr><td>Informações de pagamento</td><td>Produto comprado, valor, data e hora do pagamento, identificador da transação na loja<br><span class="meta">Não coletamos dados do meio de pagamento, como número do cartão — isso é processado pela App Store e pelo Google Play</span></td><td>Ao fazer uma compra no app</td></tr>
+  <tr><td>Identificador de publicidade</td><td>Identificador do dispositivo tratado pelo SDK de publicidade</td><td>Ao assistir a um anúncio premiado</td></tr>
+  <tr><td>Pré-cadastro</td><td>Endereço de e-mail</td><td>Ao se pré-cadastrar no site de apresentação (withcube.arachat.cc) para receber o aviso de lançamento</td></tr>
+  <tr><td>Coleta automática</td><td>Estatísticas de uso do Serviço (Google Analytics) — visualizações de tela e eventos de uso de recursos, informações do dispositivo e do navegador, localização aproximada estimada a partir do endereço IP<br><span class="meta">Não são enviadas junto com as informações da conta e, portanto, não identificam a pessoa</span></td><td>Durante o uso do Serviço</td></tr>
+</table>
+<p>Se você não entrar na sua conta, os dados do jogo ficam salvos apenas no armazenamento do app no seu dispositivo e não são enviados ao servidor.</p>
+
+<h2>2. Finalidades do uso das informações pessoais</h2>
+<ul>
+  <li>Identificação da conta e manutenção do login</li>
+  <li>Oferta de recursos on-line, como registros, rankings e partidas</li>
+  <li>Sincronização do progresso do jogo entre dispositivos</li>
+  <li>Melhoria da qualidade do Serviço (análise de estatísticas de uso anônimas)</li>
+  <li>Processamento de compras no app e prevenção de entregas em duplicidade</li>
+  <li>Envio do aviso de lançamento (e-mail do pré-cadastro) — não é usado para nenhuma outra finalidade</li>
+</ul>
+
+<h2>3. Período de retenção e uso</h2>
+<p>Quando você exclui sua conta, todas as informações pessoais salvas no servidor, como informações da conta, perfil e registros de jogo, são destruídas sem demora. Você mesmo pode excluir a conta no app, em <strong>Configurações &rarr; Excluir conta</strong>.</p>
+<p>Os e-mails do pré-cadastro são destruídos sem demora após o envio do aviso de lançamento. Se quiser que o seu seja excluído antes disso, faça a solicitação pelo contato abaixo e o excluiremos imediatamente.</p>
+
+<h2>4. Terceirização do tratamento e transferência internacional de informações pessoais</h2>
+<p>Para prestar o Serviço, o operador terceiriza o tratamento de informações pessoais conforme descrito a seguir.</p>
+<table>
+  <tr><th>Operador contratado</th><th>Atividade terceirizada</th></tr>
+  <tr><td>Supabase Inc.</td><td>Operação do banco de dados e da infraestrutura de autenticação (armazenamento de conta, perfil, registros de jogo e registros de pagamento, e armazenamento dos e-mails do pré-cadastro)</td></tr>
+  <tr><td>Google LLC</td><td>Login com Google (OAuth), análise de estatísticas de uso do Serviço (Google Analytics), exibição de anúncios premiados (Google AdMob), processamento de compras no app do Google Play e verificação de recibos</td></tr>
+  <tr><td>Apple Inc.</td><td>Login com Apple, processamento de compras no app da App Store e verificação de recibos</td></tr>
+  <tr><td>Cloudflare, Inc.</td><td>Hospedagem do site de apresentação (withcube.arachat.cc)</td></tr>
+  <tr><td>GitHub, Inc.</td><td>Hospedagem pública dos documentos da Política de Privacidade, dos Termos de Uso e do Suporte ao cliente (GitHub Pages), consulta de registros de competições publicados por ID da WCA (espelho comunitário dos dados públicos da WCA)</td></tr>
+  <tr><td>World Cube Association (WCA)</td><td>Vinculação da conta da WCA (OAuth), se o usuário optar por ela</td></tr>
+</table>
+
+<p>Os operadores acima estão localizados fora da Coreia ou tratam as informações pessoais em servidores fora da Coreia; por isso, informamos a seguir os detalhes da transferência internacional, conforme o Artigo 28-8 da Lei de Proteção de Informações Pessoais da República da Coreia. Todas as transferências ocorrem sempre que necessário durante o uso do Serviço, pela rede de comunicação (comunicação criptografada).</p>
+<table>
+  <tr><th>Destinatário (país)</th><th>Itens transferidos</th><th>Finalidade de uso</th><th>Período de retenção e uso</th></tr>
+  <tr><td>Supabase Inc.<br><span class="meta">Singapura</span></td><td>Informações da conta, informações do perfil, registros de jogo, dados do recurso de amigos, dados de vinculação com a WCA, informações de pagamento, e-mail do pré-cadastro</td><td>Armazenamento de dados e autenticação</td><td>Até a exclusão da conta (os e-mails do pré-cadastro são destruídos após o envio do aviso de lançamento)</td></tr>
+  <tr><td>Google LLC<br><span class="meta">Estados Unidos</span></td><td>E-mail e identificador da conta Google (ao entrar com Google), estatísticas de uso do Serviço, identificador de publicidade, informações de pagamento do Google Play</td><td>Login, análise de estatísticas de uso, exibição de anúncios, processamento de pagamentos</td><td>Até que a finalidade da terceirização seja atingida ou até a exclusão da conta<br><span class="meta">As estatísticas de uso do Serviço são mantidas por até 14 meses, conforme a configuração de retenção de dados do Google Analytics</span></td></tr>
+  <tr><td>Apple Inc.<br><span class="meta">Estados Unidos</span></td><td>E-mail e identificador da conta Apple (ao entrar com Apple), recibos de pagamento da App Store</td><td>Login, processamento de pagamentos e verificação de recibos</td><td>Até que a finalidade da terceirização seja atingida</td></tr>
+  <tr><td>Cloudflare, Inc.<br><span class="meta">Estados Unidos</span></td><td>Registros de acesso ao site de apresentação (endereço IP etc.)</td><td>Hospedagem do site</td><td>Conforme a política de privacidade da Cloudflare<br><span class="meta"><a href="https://www.cloudflare.com/privacypolicy/">Política de privacidade da Cloudflare</a></span></td></tr>
+  <tr><td>GitHub, Inc.<br><span class="meta">Estados Unidos</span></td><td>Registros de acesso aos documentos (endereço IP etc.), ID da WCA ao consultar registros de competições</td><td>Hospedagem dos documentos, consulta de registros de competições</td><td>Conforme a política de privacidade do GitHub<br><span class="meta"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Política de privacidade do GitHub</a></span></td></tr>
+  <tr><td>World Cube Association (WCA)<br><span class="meta">Estados Unidos</span></td><td>Dados de autenticação ao vincular a conta da WCA</td><td>Vinculação da conta da WCA</td><td>Até a desvinculação</td></tr>
+</table>
+<p class="meta">Contatos dos destinatários para questões de privacidade — Supabase Inc.: <a href="mailto:privacy@supabase.com">privacy@supabase.com</a> · Google LLC: <a href="https://support.google.com/policies?p=privpol_privts">formulário de contato sobre privacidade</a> · Apple Inc.: <a href="https://www.apple.com/legal/privacy/contact/">formulário de contato sobre privacidade</a> · Cloudflare, Inc.: <a href="mailto:privacyquestions@cloudflare.com">privacyquestions@cloudflare.com</a> · GitHub, Inc.: <a href="mailto:dpo@github.com">dpo@github.com</a> · World Cube Association: <a href="mailto:communication@worldcubeassociation.org">communication@worldcubeassociation.org</a></p>
+<p>Se não quiser a transferência internacional, você pode recusá-la da seguinte forma: usar o Serviço sem fazer login (como convidado) ou não vincular a conta da WCA; se já tiver feito login, pode excluir a conta. Nesse caso, não será possível usar os recursos on-line, como registro de tempos, rankings, partidas e sincronização entre dispositivos. A coleta de estatísticas de uso do Serviço (Google Analytics) pode ser desativada no app, em <strong>Configurações &rarr; Coleta de dados analíticos</strong>, e desativá-la não limita o uso do Serviço. Os anúncios premiados não são exibidos se você não escolher assisti-los e são oferecidos somente como anúncios não personalizados (consulte a seção 6. Publicidade).</p>
+
+<h2>5. Direitos do usuário</h2>
+<p>Você pode consultar, corrigir ou excluir suas informações pessoais a qualquer momento. O apelido e o país podem ser alterados no perfil dentro do app, e a exclusão da conta apaga todos os dados do servidor. Para outras solicitações, entre em contato pelo endereço abaixo.</p>
+<p>A coleta de estatísticas de uso do Serviço (Google Analytics) pode ser desativada a qualquer momento no app, em <strong>Configurações &rarr; Coleta de dados analíticos</strong>.</p>
+
+<h2>6. Publicidade</h2>
+<p>O Serviço exibe <strong>somente anúncios premiados</strong> que o usuário escolhe assistir; não há anúncios intersticiais nem banners obrigatórios. Os anúncios são oferecidos <strong>somente como anúncios não personalizados</strong>, portanto não exibimos publicidade direcionada com base nos seus interesses ou comportamento nem solicitamos, para isso, a permissão de rastreamento de apps (App Tracking Transparency).</p>
+
+<h2>7. Proteção de crianças e adolescentes</h2>
+<p>O Serviço é destinado a pessoas com <strong>14 anos ou mais</strong>. Não coletamos informações pessoais de crianças menores de 14 anos e, se for confirmado que um usuário tem menos de 14 anos ou se o representante legal solicitar, excluímos essas informações sem demora.</p>
+<p>As compras no app são feitas somente pelos sistemas de pagamento da App Store e do Google Play, e o Serviço não acessa os dados do meio de pagamento. Se um menor fizer um pagamento sem o consentimento do representante legal, é possível solicitar o cancelamento conforme a política de reembolso de cada loja, e os responsáveis podem controlar os pagamentos com antecedência usando os recursos <strong>Compartilhamento Familiar / Pedir Compra (Ask to Buy)</strong> e de restrição de compras da loja. Para saber como fazer a solicitação, consulte a página de <a href="support.pt-BR.html">Suporte ao cliente</a>.</p>
+
+<h2>8. Encarregado pela proteção de dados e contato</h2>
+<table>
+  <tr><th>Categoria</th><th>Detalhes</th></tr>
+  <tr><td>Controlador das informações pessoais</td><td>Jinhwa Jung (operador do Cubing, pessoa física)</td></tr>
+  <tr><td>Encarregado pela proteção de informações pessoais</td><td>Jinhwa Jung</td></tr>
+  <tr><td>Contato</td><td><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></td></tr>
+</table>
+<p>Envie dúvidas sobre informações pessoais e solicitações de consulta, correção ou exclusão para o contato acima.</p>
+<p>Para outras dúvidas, reembolsos e exclusão da conta, consulte a página de <a href="support.pt-BR.html">Suporte ao cliente</a>.</p>
+
+<h2>9. Aviso de alterações</h2>
+<p>Se esta política for alterada, avisaremos por meio de um comunicado no Serviço a partir de 7 dias antes da entrada em vigor.</p>
+</body>
+</html>

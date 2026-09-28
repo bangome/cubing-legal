@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+  번역본(편의 번역) — 한국어 원본은 public/privacy.html. 불일치 시 한국어판이 우선한다(본문 상단 고지).
+  원본을 고치면 번역본 6종도 함께 고친다. 미러 사본(github.com/bangome/cubing-legal)도 같다.
+  사본은 절대경로 링크가 상대경로로 바뀌어 있다(프로젝트 Pages는 /cubing-legal/ 하위).
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策 — Cubing</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 24px 20px 64px;
+    background: #101018; color: #e8e8f0;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    line-height: 1.7; font-size: 15px;
+    max-width: 720px; margin-inline: auto;
+  }
+  h1 { font-size: 22px; margin: 8px 0 4px; }
+  h2 { font-size: 16px; margin: 32px 0 8px; color: #ffd23d; }
+  p, li { color: #c8c8d8; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #333346; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #1a1a2a; color: #e8e8f0; }
+  .meta { color: #8888a0; font-size: 13px; }
+  a { color: #6ec6ff; }
+  .back { display: inline-block; margin-bottom: 16px; color: #8888a0; text-decoration: none; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="語言">
+  <a href="privacy.html" lang="ko" hreflang="ko">한국어</a>
+  <a href="privacy.en.html" lang="en" hreflang="en">English</a>
+  <a href="privacy.ja.html" lang="ja" hreflang="ja">日本語</a>
+  <a href="privacy.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <strong aria-current="page" lang="zh-Hant">繁體中文</strong>
+  <a href="privacy.es.html" lang="es" hreflang="es">Español</a>
+  <a href="privacy.pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+</nav>
+<a class="back" href="./">&larr; 返回 Cubing</a>
+<h1>隱私權政策</h1>
+<p class="meta">生效日期：2026-09-29 · 版本 1.4</p>
+<p class="notice">本頁面為方便閱讀而提供的翻譯版本。如本譯文與韓文版本有任何不一致，以韓文版本為準。 <a href="privacy.html" lang="ko" hreflang="ko">韓文版（한국어）</a></p>
+
+<p>Cubing（以下稱「本服務」）是 iOS·Android 行動應用程式，由個人營運者 <strong>Jinhwa Jung</strong>（以下稱「營運者」）營運。營運者遵守大韓民國《個人資訊保護法》等相關法令，並依下列方式處理使用者的個人資料。</p>
+
+<h2>1. 蒐集的個人資料項目</h2>
+<table>
+  <tr><th>類別</th><th>項目</th><th>蒐集時間</th></tr>
+  <tr><td>帳號資料</td><td>Google 或 Apple 帳號的電子郵件、個人檔案識別碼</td><td>使用 Google·Apple 登入時</td></tr>
+  <tr><td>個人檔案資料</td><td>暱稱、國家/地區（選填）</td><td>設定個人檔案時</td></tr>
+  <tr><td>遊戲紀錄</td><td>復原紀錄、對戰結果、積分（Rating）、進度</td><td>使用本服務期間</td></tr>
+  <tr><td>好友功能</td><td>好友清單、友誼賽邀請紀錄<br><span class="meta">本服務不提供由使用者自行撰寫訊息（聊天）的功能，使用者之間往來的內容僅為本服務產生的對戰邀請</span></td><td>新增好友、發起友誼賽時</td></tr>
+  <tr><td>WCA 連結資料</td><td>WCA（世界魔術方塊協會）ID、在 WCA 登記的真實姓名、大頭貼圖片網址<br><span class="meta">僅在使用者自行選擇連結時蒐集，解除連結時立即刪除</span></td><td>連結 WCA 帳號時</td></tr>
+  <tr><td>付款資料</td><td>購買的商品、付款金額、付款時間、商店交易識別碼<br><span class="meta">不蒐集卡號等付款方式資料——由 App Store·Google Play 處理</span></td><td>應用程式內購買時</td></tr>
+  <tr><td>廣告識別碼</td><td>由廣告 SDK 處理的裝置識別碼</td><td>觀看獎勵廣告時</td></tr>
+  <tr><td>預先登記</td><td>電子郵件</td><td>在介紹網站（withcube.arachat.cc）申請上市通知預先登記時</td></tr>
+  <tr><td>自動蒐集</td><td>服務使用統計（Google Analytics）——頁面瀏覽及功能使用事件、裝置及瀏覽器資訊、依 IP 推估的大致地區<br><span class="meta">不會與帳號資料一併傳送，因此不會識別個人身分</span></td><td>使用本服務期間</td></tr>
+</table>
+<p>未登入時，遊戲資料僅儲存在使用者裝置內的應用程式儲存空間中，不會傳送至伺服器。</p>
+
+<h2>2. 個人資料的使用目的</h2>
+<ul>
+  <li>識別帳號及維持登入狀態</li>
+  <li>提供紀錄、排行榜、對戰等線上功能</li>
+  <li>在裝置之間同步遊戲進度</li>
+  <li>改善服務品質（分析匿名使用統計）</li>
+  <li>處理應用程式內購買及防止重複發放</li>
+  <li>寄送上市通知（預先登記電子郵件）——不用於通知以外的用途</li>
+</ul>
+
+<h2>3. 保存及使用期間</h2>
+<p>使用者刪除帳號後，伺服器上儲存的帳號資料、個人檔案、遊戲紀錄等所有個人資料將立即銷毀。使用者可在應用程式內的<strong>設定 &rarr; 刪除帳號</strong>中自行刪除帳號。</p>
+<p>預先登記的電子郵件將在上市通知寄送完畢後立即銷毀；在此之前如希望刪除，請透過下方聯絡方式提出，我們將立即為您刪除。</p>
+
+<h2>4. 個人資料處理的委託及跨境傳輸</h2>
+<p>營運者為提供本服務，將個人資料處理業務委託如下。</p>
+<table>
+  <tr><th>受託者</th><th>委託業務</th></tr>
+  <tr><td>Supabase Inc.</td><td>資料庫及驗證基礎設施的營運（儲存帳號、個人檔案、遊戲紀錄、付款紀錄，以及預先登記的電子郵件）</td></tr>
+  <tr><td>Google LLC</td><td>Google 登入（OAuth）、服務使用統計分析（Google Analytics）、獎勵廣告顯示（Google AdMob）、Google Play 應用程式內購買處理及收據驗證</td></tr>
+  <tr><td>Apple Inc.</td><td>Apple 登入、App Store 應用程式內購買處理及收據驗證</td></tr>
+  <tr><td>Cloudflare, Inc.</td><td>介紹網站（withcube.arachat.cc）代管</td></tr>
+  <tr><td>GitHub, Inc.</td><td>隱私權政策、服務條款、客戶支援文件的公開代管（GitHub Pages），以及透過 WCA ID 查詢公開的比賽紀錄（WCA 公開資料的社群鏡像）</td></tr>
+  <tr><td>World Cube Association (WCA)</td><td>使用者選擇時的 WCA 帳號連結（OAuth）</td></tr>
+</table>
+
+<p>上述受託者位於境外或在境外伺服器處理個人資料，因此依大韓民國《個人資訊保護法》第 28 條之 8，告知跨境傳輸事項如下。所有傳輸均於使用本服務時，透過資訊通信網路（加密通訊）隨時進行。</p>
+<table>
+  <tr><th>接收者（國家/地區）</th><th>傳輸項目</th><th>使用目的</th><th>保存及使用期間</th></tr>
+  <tr><td>Supabase Inc.<br><span class="meta">新加坡</span></td><td>帳號資料、個人檔案資料、遊戲紀錄、好友功能資料、WCA 連結資料、付款資料、預先登記的電子郵件</td><td>資料儲存及驗證</td><td>至帳號刪除時為止（預先登記的電子郵件於寄送上市通知後銷毀）</td></tr>
+  <tr><td>Google LLC<br><span class="meta">美國</span></td><td>Google 帳號的電子郵件及識別碼（使用 Google 登入時）、服務使用統計、廣告識別碼、Google Play 付款資料</td><td>登入、使用統計分析、廣告顯示、付款處理</td><td>至委託目的達成時或帳號刪除時為止<br><span class="meta">服務使用統計依 Google Analytics 資料保留設定，最長 14 個月</span></td></tr>
+  <tr><td>Apple Inc.<br><span class="meta">美國</span></td><td>Apple 帳號的電子郵件及識別碼（使用 Apple 登入時）、App Store 付款收據</td><td>登入、付款處理及收據驗證</td><td>至委託目的達成時為止</td></tr>
+  <tr><td>Cloudflare, Inc.<br><span class="meta">美國</span></td><td>介紹網站的存取紀錄（IP 位址等）</td><td>網站代管</td><td>依 Cloudflare 的隱私權政策<br><span class="meta"><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 隱私權政策</a></span></td></tr>
+  <tr><td>GitHub, Inc.<br><span class="meta">美國</span></td><td>文件的存取紀錄（IP 位址等）、查詢比賽紀錄時的 WCA ID</td><td>文件代管、比賽紀錄查詢</td><td>依 GitHub 的隱私權聲明<br><span class="meta"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私權聲明</a></span></td></tr>
+  <tr><td>World Cube Association (WCA)<br><span class="meta">美國</span></td><td>WCA 連結時的驗證資料</td><td>WCA 帳號連結</td><td>至解除連結時為止</td></tr>
+</table>
+<p class="meta">接收者的個人資料諮詢聯絡方式 — Supabase Inc.：<a href="mailto:privacy@supabase.com">privacy@supabase.com</a> · Google LLC：<a href="https://support.google.com/policies?p=privpol_privts">隱私權諮詢表單</a> · Apple Inc.：<a href="https://www.apple.com/legal/privacy/contact/">隱私權諮詢表單</a> · Cloudflare, Inc.：<a href="mailto:privacyquestions@cloudflare.com">privacyquestions@cloudflare.com</a> · GitHub, Inc.：<a href="mailto:dpo@github.com">dpo@github.com</a> · World Cube Association：<a href="mailto:communication@worldcubeassociation.org">communication@worldcubeassociation.org</a></p>
+<p>如不希望進行跨境傳輸，可依下列方式拒絕：不登入而以訪客身分使用，或不連結 WCA；如已登入，可刪除帳號。此時將無法使用登記紀錄、排行榜、對戰、裝置間同步等線上功能。服務使用統計（Google Analytics）的蒐集可在應用程式內的<strong>設定 &rarr; 分析資料收集</strong>中關閉，關閉後使用本服務不受任何限制。獎勵廣告在使用者未選擇觀看時不會顯示，且僅以非個人化廣告形式提供（參閱「6. 廣告」）。</p>
+
+<h2>5. 使用者的權利</h2>
+<p>使用者可隨時查閱、更正、刪除自己的個人資料。暱稱和國家/地區可在應用程式內的個人檔案中修改，刪除帳號時伺服器上的所有資料都將被刪除。其他請求請透過下方聯絡方式與我們聯繫。</p>
+<p>服務使用統計（Google Analytics）的蒐集可隨時在應用程式內的<strong>設定 &rarr; 分析資料收集</strong>中關閉。</p>
+
+<h2>6. 廣告</h2>
+<p>本服務<strong>僅顯示</strong>由使用者自行選擇觀看的<strong>獎勵廣告</strong>，沒有強制性的插頁廣告或橫幅廣告。廣告<strong>僅以非個人化廣告形式</strong>提供，因此不會根據使用者的興趣與行為投放目標式廣告，也不會為此請求應用程式追蹤權限（App Tracking Transparency）。</p>
+
+<h2>7. 兒童及青少年保護</h2>
+<p>本服務的使用對象為<strong>滿 14 歲以上</strong>的使用者。我們不蒐集未滿 14 歲兒童的個人資料；如確認使用者未滿 14 歲，或法定代理人提出要求，我們將立即刪除相關資料。</p>
+<p>應用程式內購買僅透過 App Store·Google Play 的付款系統進行，本服務不會存取付款方式資料。未成年人未經法定代理人同意進行購買者，可依各商店的退款政策申請取消；使用商店的<strong>家人共享·購買前詢問（Ask to Buy）</strong>及購買限制功能，監護人可事先控管購買。申請方式請參閱<a href="support.zh-Hant.html">客戶支援</a>頁面。</p>
+
+<h2>8. 個人資料保護負責人及聯絡方式</h2>
+<table>
+  <tr><th>類別</th><th>內容</th></tr>
+  <tr><td>個人資料處理者</td><td>Jinhwa Jung（Cubing 營運者，個人）</td></tr>
+  <tr><td>個人資料保護負責人</td><td>Jinhwa Jung</td></tr>
+  <tr><td>聯絡方式</td><td><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></td></tr>
+</table>
+<p>個人資料相關諮詢及查閱、更正、刪除請求，請寄至上述聯絡方式。</p>
+<p>其他使用諮詢、退款、刪除帳號，請參閱<a href="support.zh-Hant.html">客戶支援</a>頁面。</p>
+
+<h2>9. 告知義務</h2>
+<p>本政策如有變更，我們將自生效前 7 日起透過服務內公告進行通知。</p>
+</body>
+</html>

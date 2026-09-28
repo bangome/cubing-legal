@@ -1,4 +1,12 @@
 <!doctype html>
+<!--
+  ⚠️ 이 파일은 **미러 사본이 있다**: github.com/bangome/cubing-legal
+  스토어(App Store·Play)가 참조하는 공개 URL은 그쪽이다:
+    https://bangome.github.io/cubing-legal/<파일명>
+  이 저장소는 비공개라 GitHub Pages를 쓸 수 없어 문서만 분리했다.
+  **고칠 때는 양쪽을 함께 고쳐야 한다.** 사본은 절대경로 링크가 상대경로로 바뀌어 있다
+  (프로젝트 Pages는 /cubing-legal/ 하위라 절대경로가 깨진다).
+-->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -28,18 +36,34 @@
     background: #1a1a2a; border: 1px solid #333346;
   }
   .contact strong { color: #ffd23d; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
 </style>
 </head>
 <body>
-<a class="back" href="./">&larr; 문서 목록</a>
+<nav class="lang" aria-label="언어">
+  <strong aria-current="page" lang="ko">한국어</strong>
+  <a href="support.en.html" lang="en" hreflang="en">English</a>
+  <a href="support.ja.html" lang="ja" hreflang="ja">日本語</a>
+  <a href="support.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <a href="support.zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+  <a href="support.es.html" lang="es" hreflang="es">Español</a>
+  <a href="support.pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+</nav>
+<a class="back" href="./">&larr; Cubing으로 돌아가기</a>
 <h1>고객 지원</h1>
-<p class="meta">Cubing · 3×3 루빅스 큐브 학습·기록 앱</p>
+<p class="meta">Cubing · 3×3 루빅스 큐브 학습·기록 앱 · 운영: 정진화</p>
 
 <div class="contact">
   <p style="margin:0">문의: <strong><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></strong></p>
   <p class="meta" style="margin:6px 0 0">
     보통 2~3영업일 안에 답변드립니다. 문의 시 사용 기기(iPhone/Android)와
-    로그인 계정(구글 이메일)을 함께 알려주시면 더 빠르게 확인할 수 있습니다.
+    로그인 계정(Google 또는 Apple 로그인 이메일)을 함께 알려주시면 더 빠르게 확인할 수 있습니다.
   </p>
 </div>
 
@@ -47,7 +71,7 @@
 
 <h3>기기를 바꿨는데 기록이 사라졌어요</h3>
 <p>
-  로그인하지 않은 상태의 기록은 그 기기에만 저장됩니다. 구글 로그인을 하면 기록·큐브·재화가
+  로그인하지 않은 상태의 기록은 그 기기에만 저장됩니다. Google 또는 Apple 로그인을 하면 기록·큐브·재화가
   계정에 저장되어 다른 기기에서도 이어집니다. 기기를 바꾸기 전에 로그인해 주세요.
 </p>
 
@@ -65,7 +89,7 @@
   <li><strong>App Store</strong>: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서 해당 결제를 선택해 환불 요청</li>
   <li><strong>Google Play</strong>: Play 스토어 &rarr; 결제 및 정기 결제 &rarr; 주문 내역 &rarr; 환불 요청</li>
 </ul>
-<p>환불이 완료되면 지급된 큐브 결정은 회수됩니다.</p>
+<p>환불된 결제로 지급된 재화는 회수될 수 있으며, 반복적인 환불은 이용 제한 사유가 될 수 있습니다.</p>
 
 <h3>미성년자가 보호자 동의 없이 결제했어요</h3>
 <p>
@@ -73,10 +97,10 @@
   필요하면 위 메일로도 알려주세요.
 </p>
 <p>
-  앱에는 다음 보호 장치가 있습니다. 첫 결제 시 연령을 확인하며,
-  <strong>만 19세 미만은 보호자 동의 후에만</strong> 결제할 수 있습니다.
-  동의는 <strong>설정 &rarr; 보호자 동의</strong>에서 언제든 철회할 수 있습니다.
-  누구에게나 <strong>월 결제 한도 7만원</strong>과 <strong>연속 결제 제한(5분)</strong>이 적용됩니다.
+  결제를 미리 통제하려면 스토어의 보호자 기능을 이용해 주세요.
+  <strong>App Store</strong>는 가족 공유의 <strong>구입 요청(Ask to Buy)</strong>으로 자녀의 결제를 보호자가 승인하게 할 수 있고,
+  <strong>Google Play</strong>는 <strong>구매 승인 요청</strong>과 인증 설정으로 같은 통제를 할 수 있습니다.
+  기기 자체의 스크린 타임·디지털 웰빙에서 인앱 구매를 아예 차단하는 방법도 있습니다.
 </p>
 
 <h3>큐브 상자(뽑기)를 유료로만 열 수 있나요</h3>
@@ -85,11 +109,12 @@
   등급별 확률과 천장(100회 개봉 시 레전드 확정)은 앱 내 뽑기 화면에서 항상 확인할 수 있습니다.
 </p>
 
-<h3>계정과 데이터를 삭제하고 싶어요</h3>
+<h3 id="account-deletion">계정과 데이터를 삭제하고 싶어요</h3>
 <p>
   앱 내 <strong>설정 &rarr; 계정 삭제</strong>에서 직접 삭제할 수 있습니다. 삭제 시 서버에 저장된
   프로필·기록·재화가 모두 파기되며 복구할 수 없습니다. 앱에 접근할 수 없는 상황이면
-  위 메일로 요청해 주세요.
+  로그인한 계정의 이메일(Google 또는 Apple)과 함께 위 메일로 요청해 주세요.
+  Apple 로그인에서 '나의 이메일 가리기'를 선택했다면 privaterelay.appleid.com으로 끝나는 주소를 알려 주세요.
 </p>
 
 <h3>광고가 보이지 않아요</h3>

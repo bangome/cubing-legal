@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+  번역본(편의 번역) — 한국어 원본은 public/privacy.html. 불일치 시 한국어판이 우선한다(본문 상단 고지).
+  원본을 고치면 번역본 6종도 함께 고친다. 미러 사본(github.com/bangome/cubing-legal)도 같다.
+  사본은 절대경로 링크가 상대경로로 바뀌어 있다(프로젝트 Pages는 /cubing-legal/ 하위).
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — Cubing</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 24px 20px 64px;
+    background: #101018; color: #e8e8f0;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    line-height: 1.7; font-size: 15px;
+    max-width: 720px; margin-inline: auto;
+  }
+  h1 { font-size: 22px; margin: 8px 0 4px; }
+  h2 { font-size: 16px; margin: 32px 0 8px; color: #ffd23d; }
+  p, li { color: #c8c8d8; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #333346; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #1a1a2a; color: #e8e8f0; }
+  .meta { color: #8888a0; font-size: 13px; }
+  a { color: #6ec6ff; }
+  .back { display: inline-block; margin-bottom: 16px; color: #8888a0; text-decoration: none; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="言語">
+  <a href="privacy.html" lang="ko" hreflang="ko">한국어</a>
+  <a href="privacy.en.html" lang="en" hreflang="en">English</a>
+  <strong aria-current="page" lang="ja">日本語</strong>
+  <a href="privacy.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <a href="privacy.zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+  <a href="privacy.es.html" lang="es" hreflang="es">Español</a>
+  <a href="privacy.pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+</nav>
+<a class="back" href="./">&larr; Cubingに戻る</a>
+<h1>プライバシーポリシー</h1>
+<p class="meta">施行日：2026-09-29 · バージョン 1.4</p>
+<p class="notice">本ページは利便性のために提供する翻訳です。本翻訳と韓国語版との間に相違がある場合は、韓国語版が優先します。 <a href="privacy.html" lang="ko" hreflang="ko">韓国語版（한국어）</a></p>
+
+<p>Cubing（以下「本サービス」）はiOS・Android向けのモバイルアプリで、個人の運営者である<strong>Jinhwa Jung</strong>（以下「運営者」）が運営しています。運営者は、大韓民国の個人情報保護法その他の関係法令を遵守し、利用者の個人情報を以下のとおり取り扱います。</p>
+
+<h2>1. 収集する個人情報の項目</h2>
+<table>
+  <tr><th>区分</th><th>項目</th><th>収集時点</th></tr>
+  <tr><td>アカウント情報</td><td>GoogleまたはAppleアカウントのメールアドレス、プロフィール識別子</td><td>Google・Appleでのログイン時</td></tr>
+  <tr><td>プロフィール情報</td><td>ニックネーム、国（任意）</td><td>プロフィール設定時</td></tr>
+  <tr><td>ゲーム記録</td><td>ソルブ記録、対戦結果、レーティング、進行度</td><td>本サービスの利用中</td></tr>
+  <tr><td>フレンド機能</td><td>フレンドリスト、フレンド対戦の招待記録<br><span class="meta">利用者が自ら作成するメッセージ（チャット）機能は提供しておらず、やり取りされる内容は本サービスが生成する対戦招待のみです</span></td><td>フレンド追加・フレンド対戦の申し込み時</td></tr>
+  <tr><td>WCA連携情報</td><td>WCA（世界キューブ協会）ID、WCAに登録された実名、プロフィール画像URL<br><span class="meta">利用者が自ら連携を選択した場合にのみ収集し、連携解除時に直ちに削除します</span></td><td>WCAアカウント連携時</td></tr>
+  <tr><td>決済情報</td><td>購入商品、決済金額、決済日時、ストアの取引識別子<br><span class="meta">カード番号などの決済手段情報は収集しません — App Store・Google Playが処理します</span></td><td>アプリ内課金時</td></tr>
+  <tr><td>広告識別子</td><td>広告SDKが処理する端末識別子</td><td>リワード広告の視聴時</td></tr>
+  <tr><td>事前登録</td><td>メールアドレス</td><td>紹介サイト（withcube.arachat.cc）でリリース通知の事前登録を申し込んだ時</td></tr>
+  <tr><td>自動収集</td><td>サービス利用統計（Google Analytics）— 画面閲覧・機能利用イベント、端末・ブラウザ情報、IPアドレスから推定したおおよその地域<br><span class="meta">アカウント情報と併せて送信しないため、個人を識別しません</span></td><td>本サービスの利用中</td></tr>
+</table>
+<p>ログインしていない場合、ゲームデータは利用者の端末内のアプリのストレージにのみ保存され、サーバーには送信されません。</p>
+
+<h2>2. 個人情報の利用目的</h2>
+<ul>
+  <li>アカウントの識別およびログイン状態の維持</li>
+  <li>記録・ランキング・対戦などのオンライン機能の提供</li>
+  <li>端末間でのゲーム進行度の同期</li>
+  <li>サービス品質の改善（匿名の利用統計の分析）</li>
+  <li>アプリ内課金の処理および重複付与の防止</li>
+  <li>リリース通知の送信（事前登録メール）— 通知以外の用途には使用しません</li>
+</ul>
+
+<h2>3. 保有および利用期間</h2>
+<p>利用者がアカウントを削除すると、アカウント情報、プロフィール、ゲーム記録など、サーバーに保存されているすべての個人情報を遅滞なく破棄します。アカウントの削除は、アプリ内の<strong>設定 &rarr; アカウント削除</strong>から利用者自身で行えます。</p>
+<p>事前登録のメールアドレスは、リリース通知の送信を終えた後に遅滞なく破棄します。それ以前でも削除をご希望の場合は、お問い合わせ先までご依頼ください。直ちに削除いたします。</p>
+
+<h2>4. 個人情報の処理の委託および越境移転</h2>
+<p>運営者は、本サービスの提供のため、以下のとおり個人情報の処理業務を委託しています。</p>
+<table>
+  <tr><th>受託者</th><th>委託業務</th></tr>
+  <tr><td>Supabase Inc.</td><td>データベースおよび認証インフラの運用（アカウント・プロフィール・ゲーム記録・決済記録の保存、事前登録メールアドレスの保存）</td></tr>
+  <tr><td>Google LLC</td><td>Googleログイン（OAuth）、サービス利用統計の分析（Google Analytics）、リワード広告の表示（Google AdMob）、Google Playのアプリ内課金の処理およびレシートの検証</td></tr>
+  <tr><td>Apple Inc.</td><td>Appleでサインイン、App Storeのアプリ内課金の処理およびレシートの検証</td></tr>
+  <tr><td>Cloudflare, Inc.</td><td>紹介サイト（withcube.arachat.cc）のホスティング</td></tr>
+  <tr><td>GitHub, Inc.</td><td>プライバシーポリシー・利用規約・カスタマーサポートの文書の公開ホスティング（GitHub Pages）、WCA IDで公開されている大会記録の照会（WCA公開データのコミュニティミラー）</td></tr>
+  <tr><td>World Cube Association (WCA)</td><td>利用者が選択した場合のWCAアカウント連携（OAuth）</td></tr>
+</table>
+
+<p>上記の受託者は国外に所在するか、国外のサーバーで個人情報を処理するため、大韓民国の個人情報保護法第28条の8に基づき、越境移転に関する事項をお知らせします。すべての移転は、本サービスの利用時に情報通信ネットワーク（暗号化された通信）を通じて随時行われます。</p>
+<table>
+  <tr><th>移転先（国）</th><th>移転する項目</th><th>利用目的</th><th>保有および利用期間</th></tr>
+  <tr><td>Supabase Inc.<br><span class="meta">シンガポール</span></td><td>アカウント情報、プロフィール情報、ゲーム記録、フレンド機能の情報、WCA連携情報、決済情報、事前登録メールアドレス</td><td>データの保存および認証</td><td>アカウント削除時まで（事前登録メールアドレスはリリース通知の送信後に破棄）</td></tr>
+  <tr><td>Google LLC<br><span class="meta">米国</span></td><td>Googleアカウントのメールアドレス・識別子（Googleログイン時）、サービス利用統計、広告識別子、Google Playの決済情報</td><td>ログイン、利用統計の分析、広告の表示、決済の処理</td><td>委託目的の達成時まで、またはアカウント削除時まで<br><span class="meta">サービス利用統計は、Google Analyticsのデータ保持設定に従い最長14か月</span></td></tr>
+  <tr><td>Apple Inc.<br><span class="meta">米国</span></td><td>Appleアカウントのメールアドレス・識別子（Appleでサインイン時）、App Storeの決済レシート</td><td>ログイン、決済の処理およびレシートの検証</td><td>委託目的の達成時まで</td></tr>
+  <tr><td>Cloudflare, Inc.<br><span class="meta">米国</span></td><td>紹介サイトのアクセス記録（IPアドレスなど）</td><td>サイトのホスティング</td><td>Cloudflareのプライバシーポリシーに従う<br><span class="meta"><a href="https://www.cloudflare.com/privacypolicy/">Cloudflareのプライバシーポリシー</a></span></td></tr>
+  <tr><td>GitHub, Inc.<br><span class="meta">米国</span></td><td>文書のアクセス記録（IPアドレスなど）、大会記録の照会時のWCA ID</td><td>文書のホスティング、大会記録の照会</td><td>GitHubのプライバシーポリシーに従う<br><span class="meta"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーポリシー</a></span></td></tr>
+  <tr><td>World Cube Association (WCA)<br><span class="meta">米国</span></td><td>WCA連携時の認証情報</td><td>WCAアカウント連携</td><td>連携解除時まで</td></tr>
+</table>
+<p class="meta">移転先の個人情報に関するお問い合わせ先 — Supabase Inc.：<a href="mailto:privacy@supabase.com">privacy@supabase.com</a> · Google LLC：<a href="https://support.google.com/policies?p=privpol_privts">プライバシーに関するお問い合わせフォーム</a> · Apple Inc.：<a href="https://www.apple.com/legal/privacy/contact/">プライバシーに関するお問い合わせフォーム</a> · Cloudflare, Inc.：<a href="mailto:privacyquestions@cloudflare.com">privacyquestions@cloudflare.com</a> · GitHub, Inc.：<a href="mailto:dpo@github.com">dpo@github.com</a> · World Cube Association：<a href="mailto:communication@worldcubeassociation.org">communication@worldcubeassociation.org</a></p>
+<p>越境移転を望まない場合は、次の方法で拒否できます。ログインせずに利用する（ゲスト）か、WCA連携を行わないことができ、すでにログインしている場合はアカウントを削除できます。この場合、記録の登録・ランキング・対戦・端末間の同期などのオンライン機能は利用できません。サービス利用統計（Google Analytics）の収集はアプリ内の<strong>設定 &rarr; 分析データ収集</strong>からオフにでき、オフにしても本サービスの利用に制限はありません。リワード広告は、利用者が視聴を選択しない限り表示されず、非パーソナライズ広告のみで提供されます（「6. 広告」参照）。</p>
+
+<h2>5. 利用者の権利</h2>
+<p>利用者はいつでも自己の個人情報を閲覧・訂正・削除できます。ニックネーム・国はアプリ内のプロフィールで変更でき、アカウントを削除するとサーバー上のすべてのデータが削除されます。その他のご依頼は、下記のお問い合わせ先までご連絡ください。</p>
+<p>サービス利用統計（Google Analytics）の収集は、アプリ内の<strong>設定 &rarr; 分析データ収集</strong>からいつでもオフにできます。</p>
+
+<h2>6. 広告</h2>
+<p>本サービスは、利用者が自ら視聴を選択する<strong>リワード広告のみ</strong>を表示し、強制的なインタースティシャル広告・バナー広告はありません。広告は<strong>非パーソナライズ広告のみ</strong>で提供されるため、利用者の興味・行動に基づくターゲティング広告は行わず、そのためのアプリのトラッキング許可（App Tracking Transparency）も求めません。</p>
+
+<h2>7. 児童・青少年の保護</h2>
+<p>本サービスの利用対象は<strong>満14歳以上</strong>です。満14歳未満の児童の個人情報は収集せず、満14歳未満であることが確認された場合、または法定代理人から要請があった場合は、当該情報を遅滞なく削除します。</p>
+<p>アプリ内課金はApp Store・Google Playの決済システムを通じてのみ行われ、本サービスは決済手段の情報にアクセスしません。未成年者が法定代理人の同意なく決済した場合は、各ストアの返金ポリシーに従って取消しを申請でき、ストアの<strong>ファミリー共有・承認と購入のリクエスト（Ask to Buy）</strong>や購入制限機能を利用すれば、保護者が決済を事前に管理できます。申請方法は<a href="support.ja.html">カスタマーサポート</a>ページをご覧ください。</p>
+
+<h2>8. 個人情報保護責任者およびお問い合わせ先</h2>
+<table>
+  <tr><th>区分</th><th>内容</th></tr>
+  <tr><td>個人情報処理者</td><td>Jinhwa Jung（Cubing運営者、個人）</td></tr>
+  <tr><td>個人情報保護責任者</td><td>Jinhwa Jung</td></tr>
+  <tr><td>連絡先</td><td><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></td></tr>
+</table>
+<p>個人情報に関するお問い合わせ・閲覧・訂正・削除のご依頼は、上記の連絡先までお送りください。</p>
+<p>その他のご利用に関するお問い合わせ・返金・アカウント削除については、<a href="support.ja.html">カスタマーサポート</a>ページをご覧ください。</p>
+
+<h2>9. 告知義務</h2>
+<p>本ポリシーを変更する場合は、施行の7日前から本サービス内のお知らせでお知らせします。</p>
+</body>
+</html>

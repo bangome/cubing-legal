@@ -1,4 +1,12 @@
 <!doctype html>
+<!--
+  ⚠️ 이 파일은 **미러 사본이 있다**: github.com/bangome/cubing-legal
+  스토어(App Store·Play)가 참조하는 공개 URL은 그쪽이다:
+    https://bangome.github.io/cubing-legal/<파일명>
+  이 저장소는 비공개라 GitHub Pages를 쓸 수 없어 문서만 분리했다.
+  **고칠 때는 양쪽을 함께 고쳐야 한다.** 사본은 절대경로 링크가 상대경로로 바뀌어 있다
+  (프로젝트 Pages는 /cubing-legal/ 하위라 절대경로가 깨진다).
+-->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -19,51 +27,76 @@
   .meta { color: #8888a0; font-size: 13px; }
   a { color: #6ec6ff; }
   .back { display: inline-block; margin-bottom: 16px; color: #8888a0; text-decoration: none; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
 </style>
 </head>
 <body>
-<a class="back" href="./">&larr; 문서 목록</a>
+<nav class="lang" aria-label="언어">
+  <strong aria-current="page" lang="ko">한국어</strong>
+  <a href="terms.en.html" lang="en" hreflang="en">English</a>
+  <a href="terms.ja.html" lang="ja" hreflang="ja">日本語</a>
+  <a href="terms.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <a href="terms.zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+  <a href="terms.es.html" lang="es" hreflang="es">Español</a>
+  <a href="terms.pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+</nav>
+<a class="back" href="./">&larr; Cubing으로 돌아가기</a>
 <h1>이용약관</h1>
-<p class="meta">시행일: 2026-07-03 · 버전 1.0</p>
+<p class="meta">시행일: 2026-09-29 · 버전 1.2</p>
 
 <h2>제1조 (목적)</h2>
-<p>본 약관은 Cubing(이하 "서비스")의 이용 조건 및 절차, 이용자와 운영자의 권리·의무를 규정합니다. 서비스를 이용하면 본 약관에 동의한 것으로 봅니다.</p>
+<p>본 약관은 개인 운영자 <strong>정진화</strong>(이하 "운영자")가 제공하는 Cubing(이하 "서비스")의 이용 조건 및 절차, 이용자와 운영자의 권리·의무를 규정합니다. 서비스를 이용하면 본 약관에 동의한 것으로 봅니다.</p>
 
 <h2>제2조 (서비스의 내용)</h2>
-<p>서비스는 루빅스 큐브 학습·연습·기록·온라인 대전 기능을 제공하는 무료 웹 게임입니다. 운영자는 서비스의 전부 또는 일부를 사전 공지 후 변경하거나 중단할 수 있습니다.</p>
+<p>서비스는 루빅스 큐브 학습·연습·기록·온라인 대전 기능을 제공하는 iOS·Android 모바일 앱입니다. 기본 기능은 무료로 제공되며, 일부 유료 아이템(큐브 결정 패키지)은 App Store·Google Play 인앱 결제로 구매할 수 있습니다. 또한 이용자가 스스로 시청을 선택하는 보상형 광고가 포함됩니다. 운영자는 서비스의 전부 또는 일부를 사전 공지 후 변경하거나 중단할 수 있습니다.</p>
 
-<h2>제3조 (계정)</h2>
+<h2>제3조 (이용 자격)</h2>
 <ul>
-  <li>온라인 기능(기록 등록, 랭킹, 대전)은 Google 계정 로그인이 필요합니다.</li>
+  <li>서비스의 이용 대상은 <strong>만 14세 이상</strong>입니다. 만 14세 미만은 서비스를 이용할 수 없습니다.</li>
+  <li>만 19세 미만 이용자가 인앱 결제를 하려는 경우 법정대리인의 동의를 받아야 합니다. 동의 없이 이뤄진 결제는 관련 법령과 각 스토어의 환불 정책에 따라 취소를 요청할 수 있습니다.</li>
+</ul>
+
+<h2>제4조 (계정)</h2>
+<ul>
+  <li>온라인 기능(기록 등록, 랭킹, 대전)은 Google 또는 Apple 계정 로그인이 필요합니다.</li>
   <li>계정은 본인만 이용해야 하며, 타인에게 양도·대여할 수 없습니다.</li>
   <li>이용자는 언제든지 앱 내 설정에서 계정을 삭제할 수 있습니다.</li>
 </ul>
 
-<h2>제4조 (이용자의 의무)</h2>
+<h2>제5조 (이용자의 의무)</h2>
 <p>이용자는 다음 행위를 해서는 안 됩니다.</p>
 <ul>
   <li>비정상적인 방법(자동화 도구, 데이터 조작 등)으로 기록·랭킹·재화를 조작하는 행위</li>
   <li>타인에게 불쾌감을 주는 닉네임 사용 또는 타인 사칭</li>
   <li>서비스의 정상 운영을 방해하는 행위</li>
+  <li>결제 후 반복적으로 환불을 받는 등 결제 제도를 부정하게 이용하는 행위</li>
 </ul>
 <p>위반 시 기록 삭제, 랭킹 제외, 이용 제한 조치가 있을 수 있습니다.</p>
+<p>결제 후 반복적 환불 등 부정 이용이 확인되면 이용을 제한하고, 환불된 결제로 지급된 재화를 회수할 수 있습니다.</p>
 
-<h2>제5조 (게임 데이터)</h2>
+<h2>제6조 (게임 데이터)</h2>
 <ul>
   <li>게임 진행도·재화·수집품은 서비스 내에서만 가치를 가지며 현금 또는 재산상 이익으로 교환할 수 없습니다.</li>
-  <li>로그인하지 않은 상태의 데이터는 기기에만 저장되며, 기기 변경·브라우저 데이터 삭제 시 복구되지 않을 수 있습니다.</li>
+  <li>로그인하지 않은 상태의 데이터는 기기 내 앱 저장소에만 저장되며, 앱 삭제·앱 데이터 삭제 또는 기기 변경 시 복구되지 않을 수 있습니다.</li>
+  <li>로그인한 상태의 진행 데이터는 계정에 저장됩니다. 로그아웃하면 기기에 남은 진행 데이터는 초기화되며, 같은 계정으로 다시 로그인하면 계정에 저장된 데이터가 복원됩니다.</li>
 </ul>
 
-<h2>제6조 (지식재산권)</h2>
+<h2>제7조 (지식재산권)</h2>
 <p>서비스에 포함된 콘텐츠(디자인, 그래픽, 소프트웨어)에 대한 권리는 운영자에게 있습니다. 서비스는 오픈소스 소프트웨어를 활용하며, 각 라이선스는 해당 프로젝트의 조건을 따릅니다.</p>
 
-<h2>제7조 (책임의 한계)</h2>
-<p>서비스는 "있는 그대로" 제공되며, 운영자는 천재지변, 인프라 장애 등 불가항력으로 인한 손해 및 무료 서비스 이용과 관련하여 발생한 손해에 대해 관련 법령이 허용하는 범위 내에서 책임을 지지 않습니다.</p>
+<h2>제8조 (책임의 한계)</h2>
+<p>서비스는 "있는 그대로" 제공되며, 운영자는 천재지변, 인프라 장애 등 불가항력으로 인한 손해 및 무료로 제공되는 기능의 이용과 관련하여 발생한 손해에 대해 관련 법령이 허용하는 범위 내에서 책임을 지지 않습니다. 다만 운영자의 고의 또는 중대한 과실로 인한 손해는 그러하지 아니합니다.</p>
 
-<h2>제8조 (분쟁 해결)</h2>
+<h2>제9조 (분쟁 해결)</h2>
 <p>본 약관은 대한민국 법률에 따라 해석되며, 분쟁 발생 시 민사소송법에 따른 관할 법원에서 해결합니다.</p>
 
 <h2>부칙</h2>
-<p>본 약관은 2026-07-03부터 시행합니다. 문의: <strong><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></strong></p>
+<p>본 약관은 2026-09-29부터 시행합니다. 운영자: 정진화 · 문의: <strong><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></strong></p>
 </body>
 </html>

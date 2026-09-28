@@ -30,69 +30,105 @@
   .meta { color: #8888a0; font-size: 13px; }
   a { color: #6ec6ff; }
   .back { display: inline-block; margin-bottom: 16px; color: #8888a0; text-decoration: none; }
+  .lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 16px; font-size: 13px; }
+  .lang a { color: #8888a0; }
+  .lang strong { color: #e8e8f0; font-weight: 600; }
+  .notice {
+    margin: 12px 0 20px; padding: 10px 14px; border-radius: 10px;
+    background: #1a1a2a; border: 1px solid #333346; font-size: 13.5px; color: #c8c8d8;
+  }
 </style>
 </head>
 <body>
-<a class="back" href="/">&larr; Cubing으로 돌아가기</a>
+<nav class="lang" aria-label="언어">
+  <strong aria-current="page" lang="ko">한국어</strong>
+  <a href="privacy.en.html" lang="en" hreflang="en">English</a>
+  <a href="privacy.ja.html" lang="ja" hreflang="ja">日本語</a>
+  <a href="privacy.zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+  <a href="privacy.zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+  <a href="privacy.es.html" lang="es" hreflang="es">Español</a>
+  <a href="privacy.pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+</nav>
+<a class="back" href="./">&larr; Cubing으로 돌아가기</a>
 <h1>개인정보처리방침</h1>
-<p class="meta">시행일: 2026-08-19 · 버전 1.2</p>
+<p class="meta">시행일: 2026-09-29 · 버전 1.4</p>
 
-<p>Cubing(이하 "서비스")는 개인정보 보호법 등 관련 법령을 준수하며, 이용자의 개인정보를 아래와 같이 처리합니다.</p>
+<p>Cubing(이하 "서비스")은 iOS·Android 모바일 앱으로, 개인 운영자 <strong>정진화</strong>(이하 "운영자")가 운영합니다. 운영자는 개인정보 보호법 등 관련 법령을 준수하며, 이용자의 개인정보를 아래와 같이 처리합니다.</p>
 
 <h2>1. 수집하는 개인정보 항목</h2>
 <table>
   <tr><th>구분</th><th>항목</th><th>수집 시점</th></tr>
-  <tr><td>계정 정보</td><td>Google 계정 이메일, 프로필 식별자</td><td>Google 로그인 시</td></tr>
+  <tr><td>계정 정보</td><td>Google 또는 Apple 계정 이메일, 프로필 식별자</td><td>Google·Apple 로그인 시</td></tr>
   <tr><td>프로필 정보</td><td>닉네임, 국가(선택)</td><td>프로필 설정 시</td></tr>
   <tr><td>게임 기록</td><td>솔브 기록, 대전 결과, 레이팅, 진행도</td><td>서비스 이용 중</td></tr>
-  <tr><td>친구 기능</td><td>친구 목록, 친구 간 주고받은 메시지</td><td>친구 추가·채팅 시</td></tr>
+  <tr><td>친구 기능</td><td>친구 목록, 친선전 초대 기록<br><span class="meta">이용자가 직접 작성하는 메시지(채팅) 기능은 제공하지 않으며, 주고받는 내용은 서비스가 생성한 대전 초대뿐입니다</span></td><td>친구 추가·친선전 신청 시</td></tr>
   <tr><td>WCA 연동 정보</td><td>WCA(월드큐브협회) ID, WCA 등록 실명, 프로필 이미지 URL<br><span class="meta">이용자가 직접 연동을 선택한 경우에만 수집되며, 연동 해제 시 즉시 삭제됩니다</span></td><td>WCA 계정 연동 시</td></tr>
   <tr><td>결제 정보</td><td>구매 상품, 결제 금액, 결제 시각, 스토어 거래 식별자<br><span class="meta">카드번호 등 결제수단 정보는 수집하지 않습니다 — App Store·Google Play가 처리합니다</span></td><td>인앱 결제 시</td></tr>
   <tr><td>광고 식별자</td><td>광고 SDK가 처리하는 기기 식별자</td><td>보상형 광고 시청 시</td></tr>
-  <tr><td>사전등록</td><td>이메일 주소</td><td>소개 사이트(aravoca.arachat.cc)에서 출시 알림 사전등록 신청 시</td></tr>
-  <tr><td>자동 수집</td><td>서비스 이용 통계(익명), 오류 정보(브라우저 정보, 오류 메시지)</td><td>서비스 이용 중</td></tr>
+  <tr><td>사전등록</td><td>이메일 주소</td><td>소개 사이트(withcube.arachat.cc)에서 출시 알림 사전등록 신청 시</td></tr>
+  <tr><td>자동 수집</td><td>서비스 이용 통계(Google Analytics) — 화면 조회·기능 사용 이벤트, 기기·브라우저 정보, IP로 추정한 대략적 지역<br><span class="meta">계정 정보를 함께 전송하지 않아 개인을 식별하지 않습니다</span></td><td>서비스 이용 중</td></tr>
 </table>
-<p>로그인하지 않은 경우 게임 데이터는 이용자의 기기(브라우저 저장소)에만 저장되며 서버로 전송되지 않습니다.</p>
+<p>로그인하지 않은 경우 게임 데이터는 이용자 기기 내 앱 저장소에만 저장되며 서버로 전송되지 않습니다.</p>
 
 <h2>2. 개인정보의 이용 목적</h2>
 <ul>
   <li>계정 식별 및 로그인 유지</li>
   <li>기록·랭킹·대전 등 온라인 기능 제공</li>
   <li>기기 간 게임 진행도 동기화</li>
-  <li>서비스 품질 개선(익명 이용 통계, 오류 분석)</li>
+  <li>서비스 품질 개선(익명 이용 통계 분석)</li>
   <li>인앱 결제 처리 및 중복 지급 방지</li>
   <li>출시 알림 발송(사전등록 이메일) — 알림 외 용도로 사용하지 않음</li>
-  <li>저연령 보호 의무 이행(월 결제 한도 관리, 보호자 동의 확인)</li>
 </ul>
 
 <h2>3. 보유 및 이용 기간</h2>
 <p>이용자가 계정을 삭제하면 계정 정보, 프로필, 게임 기록 등 서버에 저장된 모든 개인정보는 지체 없이 파기됩니다. 계정 삭제는 앱 내 <strong>설정 &rarr; 계정 삭제</strong>에서 직접 할 수 있습니다.</p>
 <p>사전등록 이메일은 출시 알림 발송을 마친 뒤 지체 없이 파기하며, 그 전이라도 삭제를 원하시면 문의처로 요청해 주세요. 즉시 삭제해 드립니다.</p>
 
-<h2>4. 개인정보 처리의 위탁</h2>
+<h2>4. 개인정보 처리의 위탁 및 국외 이전</h2>
+<p>운영자는 서비스 제공을 위해 아래와 같이 개인정보 처리 업무를 위탁합니다.</p>
 <table>
   <tr><th>수탁자</th><th>위탁 업무</th></tr>
-  <tr><td>Supabase Inc.</td><td>데이터베이스 및 인증 인프라 운영</td></tr>
-  <tr><td>Google LLC</td><td>로그인(OAuth), 서비스 이용 통계 분석(Google Analytics), 광고 노출(Google AdMob)</td></tr>
-  <tr><td>Apple Inc. / Google LLC</td><td>인앱 결제 처리 및 영수증 검증</td></tr>
-  <tr><td>Vercel Inc.</td><td>웹 호스팅</td></tr>
-  <tr><td>World Cube Association (WCA)<br><span class="meta">국외(미국) 소재</span></td><td>이용자가 선택한 경우 WCA 계정 연동(OAuth)</td></tr>
-  <tr><td>GitHub, Inc.<br><span class="meta">국외(미국) 소재</span></td><td>WCA ID로 공개된 대회 기록 조회 (WCA 공개 데이터의 커뮤니티 미러)</td></tr>
+  <tr><td>Supabase Inc.</td><td>데이터베이스 및 인증 인프라 운영(계정·프로필·게임 기록·결제 기록 저장, 사전등록 이메일 저장)</td></tr>
+  <tr><td>Google LLC</td><td>Google 로그인(OAuth), 서비스 이용 통계 분석(Google Analytics), 보상형 광고 노출(Google AdMob), Google Play 인앱 결제 처리 및 영수증 검증</td></tr>
+  <tr><td>Apple Inc.</td><td>Apple 로그인, App Store 인앱 결제 처리 및 영수증 검증</td></tr>
+  <tr><td>Cloudflare, Inc.</td><td>소개 사이트(withcube.arachat.cc) 호스팅</td></tr>
+  <tr><td>GitHub, Inc.</td><td>개인정보처리방침·이용약관·고객 지원 문서 공개 호스팅(GitHub Pages), WCA ID로 공개된 대회 기록 조회(WCA 공개 데이터의 커뮤니티 미러)</td></tr>
+  <tr><td>World Cube Association (WCA)</td><td>이용자가 선택한 경우 WCA 계정 연동(OAuth)</td></tr>
 </table>
+
+<p>위 수탁자는 국외에 소재하거나 국외 서버에서 개인정보를 처리하므로, 개인정보 보호법 제28조의8에 따라 국외 이전 사항을 알립니다. 모든 이전은 서비스 이용 시 정보통신망(암호화된 통신)을 통해 수시로 이뤄집니다.</p>
+<table>
+  <tr><th>이전받는 자 (국가)</th><th>이전 항목</th><th>이용 목적</th><th>보유 및 이용 기간</th></tr>
+  <tr><td>Supabase Inc.<br><span class="meta">싱가포르</span></td><td>계정 정보, 프로필 정보, 게임 기록, 친구 기능 정보, WCA 연동 정보, 결제 정보, 사전등록 이메일</td><td>데이터 저장 및 인증</td><td>계정 삭제 시까지(사전등록 이메일은 출시 알림 발송 후 파기)</td></tr>
+  <tr><td>Google LLC<br><span class="meta">미국</span></td><td>Google 계정 이메일·식별자(Google 로그인 시), 서비스 이용 통계, 광고 식별자, Google Play 결제 정보</td><td>로그인, 이용 통계 분석, 광고 노출, 결제 처리</td><td>위탁 목적 달성 시까지 또는 계정 삭제 시까지<br><span class="meta">서비스 이용 통계는 Google Analytics 데이터 보관 설정에 따라 최대 14개월</span></td></tr>
+  <tr><td>Apple Inc.<br><span class="meta">미국</span></td><td>Apple 계정 이메일·식별자(Apple 로그인 시), App Store 결제 영수증</td><td>로그인, 결제 처리 및 영수증 검증</td><td>위탁 목적 달성 시까지</td></tr>
+  <tr><td>Cloudflare, Inc.<br><span class="meta">미국</span></td><td>소개 사이트 접속 기록(IP 주소 등)</td><td>사이트 호스팅</td><td>Cloudflare의 개인정보처리방침에 따름<br><span class="meta"><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 개인정보처리방침</a></span></td></tr>
+  <tr><td>GitHub, Inc.<br><span class="meta">미국</span></td><td>문서 접속 기록(IP 주소 등), 대회 기록 조회 시 WCA ID</td><td>문서 호스팅, 대회 기록 조회</td><td>GitHub의 개인정보처리방침에 따름<br><span class="meta"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a></span></td></tr>
+  <tr><td>World Cube Association (WCA)<br><span class="meta">미국</span></td><td>WCA 연동 시 인증 정보</td><td>WCA 계정 연동</td><td>연동 해제 시까지</td></tr>
+</table>
+<p class="meta">이전받는 자의 개인정보 문의 연락처 — Supabase Inc.: <a href="mailto:privacy@supabase.com">privacy@supabase.com</a> · Google LLC: <a href="https://support.google.com/policies?p=privpol_privts">개인정보 문의 양식</a> · Apple Inc.: <a href="https://www.apple.com/legal/privacy/contact/">개인정보 문의 양식</a> · Cloudflare, Inc.: <a href="mailto:privacyquestions@cloudflare.com">privacyquestions@cloudflare.com</a> · GitHub, Inc.: <a href="mailto:dpo@github.com">dpo@github.com</a> · World Cube Association: <a href="mailto:communication@worldcubeassociation.org">communication@worldcubeassociation.org</a></p>
+<p>국외 이전을 원하지 않으면 다음과 같이 거부할 수 있습니다. 로그인하지 않고 이용하거나(게스트) WCA 연동을 하지 않을 수 있고, 이미 로그인했다면 계정을 삭제할 수 있습니다. 이 경우 기록 등록·랭킹·대전·기기 간 동기화 등 온라인 기능을 이용할 수 없습니다. 서비스 이용 통계(Google Analytics) 수집은 앱 내 <strong>설정 &rarr; 분석 데이터 수집</strong>에서 끌 수 있으며, 꺼도 서비스 이용에 제한은 없습니다. 보상형 광고는 이용자가 시청을 선택하지 않으면 노출되지 않으며, 비개인화 광고로만 제공됩니다(6. 광고 참고).</p>
 
 <h2>5. 이용자의 권리</h2>
 <p>이용자는 언제든지 자신의 개인정보를 열람·정정·삭제할 수 있습니다. 닉네임·국가는 앱 내 프로필에서 수정할 수 있으며, 계정 삭제 시 모든 서버 데이터가 삭제됩니다. 기타 요청은 아래 문의처로 연락해 주세요.</p>
+<p>서비스 이용 통계(Google Analytics) 수집은 앱 내 <strong>설정 &rarr; 분석 데이터 수집</strong>에서 언제든지 끌 수 있습니다.</p>
 
 <h2>6. 광고</h2>
 <p>서비스는 이용자가 스스로 시청을 선택하는 <strong>보상형 광고만</strong> 노출하며, 강제 전면·배너 광고는 없습니다. 광고는 <strong>비개인화 광고로만</strong> 제공되므로 이용자의 관심사·행동을 기반으로 맞춤 광고를 하지 않으며, 이를 위한 앱 추적 권한(App Tracking Transparency)도 요청하지 않습니다.</p>
 
 <h2>7. 아동·청소년 보호</h2>
-<p>서비스의 이용 대상은 <strong>만 13세 이상</strong>입니다. 만 14세 미만 아동의 개인정보는 의도적으로 수집하지 않으며, 법정대리인의 요청이 있는 경우 해당 정보를 지체 없이 삭제합니다.</p>
-<p>결제와 관련해서는 더 넓은 기준을 적용합니다. <strong>만 19세 미만</strong>은 보호자 동의 후에만 결제할 수 있고, 동의는 앱 내 설정에서 언제든 철회할 수 있습니다. 연령과 무관하게 <strong>월 결제 한도 7만원</strong>과 연속 결제 제한(5분)이 적용됩니다.</p>
+<p>서비스의 이용 대상은 <strong>만 14세 이상</strong>입니다. 만 14세 미만 아동의 개인정보는 수집하지 않으며, 만 14세 미만임이 확인되거나 법정대리인의 요청이 있는 경우 해당 정보를 지체 없이 삭제합니다.</p>
+<p>인앱 결제는 App Store·Google Play의 결제 시스템을 통해서만 이뤄지며, 서비스는 결제수단 정보에 접근하지 않습니다. 미성년자가 법정대리인의 동의 없이 결제한 경우 각 스토어의 환불 정책에 따라 취소를 요청할 수 있고, 스토어의 <strong>가족 공유·구입 요청(Ask to Buy)</strong>·구매 제한 기능을 이용하면 보호자가 결제를 사전에 통제할 수 있습니다. 요청 방법은 <a href="support.html">고객 지원</a> 페이지를 참고해 주세요.</p>
 
-<h2>8. 문의처</h2>
-<p>개인정보 관련 문의: <strong><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></strong></p>
-<p>기타 이용 문의·환불·계정 삭제는 <a href="/support.html">고객 지원</a> 페이지를 참고해 주세요.</p>
+<h2>8. 개인정보 보호책임자 및 문의처</h2>
+<table>
+  <tr><th>구분</th><th>내용</th></tr>
+  <tr><td>개인정보 처리자</td><td>정진화 (Cubing 운영자, 개인)</td></tr>
+  <tr><td>개인정보 보호책임자</td><td>정진화</td></tr>
+  <tr><td>연락처</td><td><a href="mailto:aracube@gmail.com">aracube@gmail.com</a></td></tr>
+</table>
+<p>개인정보 관련 문의·열람·정정·삭제 요청은 위 연락처로 보내 주세요.</p>
+<p>기타 이용 문의·환불·계정 삭제는 <a href="support.html">고객 지원</a> 페이지를 참고해 주세요.</p>
 
 <h2>9. 고지 의무</h2>
 <p>본 방침이 변경되는 경우 시행 7일 전부터 서비스 내 공지를 통해 알립니다.</p>
