@@ -48,7 +48,7 @@
 </nav>
 <a class="back" href="./">&larr; Volver a Cubing</a>
 <h1>Política de privacidad</h1>
-<p class="meta">Fecha de entrada en vigor: 2026-09-29 · Versión 1.4</p>
+<p class="meta">Fecha de entrada en vigor: 2026-09-30 · Versión 1.5</p>
 <p class="notice">Esta es una traducción de cortesía. En caso de discrepancia entre esta traducción y la versión en coreano, prevalecerá la versión en coreano. <a href="privacy.html" lang="ko" hreflang="ko">Versión en coreano (한국어)</a></p>
 
 <p>Cubing (en adelante, el "Servicio") es una app móvil para iOS y Android gestionada por el operador individual <strong>Jinhwa Jung</strong> (en adelante, el "operador"). El operador cumple con la Ley de Protección de Información Personal de la República de Corea y demás normativa aplicable, y trata la información personal de los usuarios como se indica a continuación.</p>
@@ -60,6 +60,8 @@
   <tr><td>Información del perfil</td><td>Apodo, país (opcional)</td><td>Al configurar el perfil</td></tr>
   <tr><td>Registros de juego</td><td>Registros de resolución, resultados de partidas, puntuación (rating), progreso</td><td>Durante el uso del Servicio</td></tr>
   <tr><td>Función de amigos</td><td>Lista de amigos, registro de invitaciones a partidas amistosas<br><span class="meta">El Servicio no ofrece una función para que los usuarios escriban sus propios mensajes (chat); el único contenido que se intercambia son las invitaciones a partidas generadas por el Servicio</span></td><td>Al añadir un amigo o solicitar una partida amistosa</td></tr>
+  <tr><td>Registros de denuncias</td><td>Identificadores de la cuenta que denuncia y de la cuenta denunciada, motivo de la denuncia, apodo de la persona denunciada en el momento de la denuncia, fecha y hora de la denuncia y de su gestión, resultado de la gestión</td><td>Al denunciar a otro usuario</td></tr>
+  <tr><td>Lista de bloqueos</td><td>Identificadores de la cuenta que bloquea y de la cuenta bloqueada, fecha y hora del bloqueo</td><td>Al bloquear a otro usuario</td></tr>
   <tr><td>Datos de vinculación con la WCA</td><td>ID de la WCA (World Cube Association), nombre real registrado en la WCA, URL de la imagen de perfil<br><span class="meta">Solo se recopilan si el usuario elige vincular su cuenta y se eliminan de inmediato al desvincularla</span></td><td>Al vincular la cuenta de la WCA</td></tr>
   <tr><td>Información de pago</td><td>Producto comprado, importe, fecha y hora del pago, identificador de la transacción en la tienda<br><span class="meta">No recopilamos datos del medio de pago, como el número de tarjeta; de eso se encargan App Store y Google Play</span></td><td>Al realizar una compra dentro de la app</td></tr>
   <tr><td>Identificador publicitario</td><td>Identificador del dispositivo tratado por el SDK de publicidad</td><td>Al ver un anuncio con recompensa</td></tr>
@@ -76,17 +78,19 @@
   <li>Mejorar la calidad del Servicio (análisis de estadísticas de uso anónimas)</li>
   <li>Procesar las compras dentro de la app y evitar entregas duplicadas</li>
   <li>Enviar el aviso de lanzamiento (correo del registro previo); no se usa para ningún otro fin</li>
+  <li>Gestionar denuncias por apodos inapropiados, suplantación de identidad y casos similares, y mantener la seguridad del Servicio, incluida la restricción de uso</li>
 </ul>
 
 <h2>3. Periodo de conservación y uso</h2>
 <p>Cuando eliminas tu cuenta, toda la información personal guardada en el servidor, como la información de la cuenta, el perfil y los registros de juego, se destruye sin demora. Puedes eliminar la cuenta tú mismo en la app, en <strong>Ajustes &rarr; Eliminar cuenta</strong>.</p>
+<p>Los registros de denuncias y la lista de bloqueos también se destruyen al eliminar la cuenta; si se elimina la cuenta de quien denunció o bloqueó, o la de la persona afectada, los registros correspondientes se destruyen. Los registros de auditoría de las medidas que toma el Operador, como la gestión de denuncias, se desvinculan de la cuenta cuando esta se elimina y se conservan de forma que no permite identificar a ninguna persona.</p>
 <p>Los correos del registro previo se destruyen sin demora una vez enviado el aviso de lanzamiento. Si quieres que se elimine antes, solicítalo a través del contacto indicado abajo y lo eliminaremos de inmediato.</p>
 
 <h2>4. Encargo del tratamiento de la información personal y transferencia internacional</h2>
 <p>Para prestar el Servicio, el operador encarga el tratamiento de la información personal a los siguientes encargados del tratamiento.</p>
 <table>
   <tr><th>Encargado del tratamiento</th><th>Tarea encargada</th></tr>
-  <tr><td>Supabase Inc.</td><td>Operación de la base de datos y de la infraestructura de autenticación (almacenamiento de cuentas, perfiles, registros de juego y registros de pago, y de los correos del registro previo)</td></tr>
+  <tr><td>Supabase Inc.</td><td>Operación de la base de datos y de la infraestructura de autenticación (almacenamiento de cuentas, perfiles, registros de juego, registros de pago, registros de denuncias y lista de bloqueos, y de los correos del registro previo)</td></tr>
   <tr><td>Google LLC</td><td>Inicio de sesión con Google (OAuth), análisis de estadísticas de uso (Google Analytics), publicación de anuncios con recompensa (Google AdMob), procesamiento de las compras dentro de la app en Google Play y verificación de recibos</td></tr>
   <tr><td>Apple Inc.</td><td>Inicio de sesión con Apple, procesamiento de las compras dentro de la app en App Store y verificación de recibos</td></tr>
   <tr><td>Cloudflare, Inc.</td><td>Alojamiento del sitio de presentación (withcube.arachat.cc)</td></tr>
@@ -97,7 +101,7 @@
 <p>Como los encargados anteriores están ubicados fuera de Corea o tratan la información personal en servidores fuera de Corea, informamos de la transferencia internacional conforme al artículo 28-8 de la Ley de Protección de Información Personal. Todas las transferencias se realizan de forma continua mediante redes de información y comunicaciones (comunicación cifrada) durante el uso del Servicio.</p>
 <table>
   <tr><th>Destinatario (país)</th><th>Datos transferidos</th><th>Finalidad</th><th>Periodo de conservación y uso</th></tr>
-  <tr><td>Supabase Inc.<br><span class="meta">Singapur</span></td><td>Información de la cuenta, información del perfil, registros de juego, datos de la función de amigos, datos de vinculación con la WCA, información de pago, correo del registro previo</td><td>Almacenamiento de datos y autenticación</td><td>Hasta la eliminación de la cuenta (el correo del registro previo se destruye tras enviar el aviso de lanzamiento)</td></tr>
+  <tr><td>Supabase Inc.<br><span class="meta">Singapur</span></td><td>Información de la cuenta, información del perfil, registros de juego, datos de la función de amigos, datos de vinculación con la WCA, información de pago, registros de denuncias, lista de bloqueos, correo del registro previo</td><td>Almacenamiento de datos y autenticación</td><td>Hasta la eliminación de la cuenta (el correo del registro previo se destruye tras enviar el aviso de lanzamiento)</td></tr>
   <tr><td>Google LLC<br><span class="meta">Estados Unidos</span></td><td>Correo electrónico e identificador de la cuenta de Google (al iniciar sesión con Google), estadísticas de uso del Servicio, identificador publicitario, información de pago de Google Play</td><td>Inicio de sesión, análisis de estadísticas de uso, publicación de anuncios, procesamiento de pagos</td><td>Hasta cumplir la finalidad del encargo o hasta la eliminación de la cuenta<br><span class="meta">Las estadísticas de uso del Servicio se conservan hasta 14 meses como máximo, según la configuración de conservación de datos de Google Analytics</span></td></tr>
   <tr><td>Apple Inc.<br><span class="meta">Estados Unidos</span></td><td>Correo electrónico e identificador de la cuenta de Apple (al iniciar sesión con Apple), recibos de pago de App Store</td><td>Inicio de sesión, procesamiento de pagos y verificación de recibos</td><td>Hasta cumplir la finalidad del encargo</td></tr>
   <tr><td>Cloudflare, Inc.<br><span class="meta">Estados Unidos</span></td><td>Registros de acceso al sitio de presentación (dirección IP, etc.)</td><td>Alojamiento del sitio</td><td>Según la política de privacidad de Cloudflare<br><span class="meta"><a href="https://www.cloudflare.com/privacypolicy/">Política de privacidad de Cloudflare</a></span></td></tr>
@@ -108,7 +112,7 @@
 <p>Si no deseas la transferencia internacional, puedes rechazarla de la siguiente manera: puedes usar el Servicio sin iniciar sesión (como invitado) o no vincular la cuenta de la WCA y, si ya iniciaste sesión, puedes eliminar tu cuenta. En ese caso, no podrás usar las funciones en línea, como el registro de tiempos, las clasificaciones, las partidas y la sincronización entre dispositivos. La recopilación de estadísticas de uso del Servicio (Google Analytics) se puede desactivar en la app, en <strong>Ajustes &rarr; Recopilación de datos analíticos</strong>, y desactivarla no limita el uso del Servicio. Los anuncios con recompensa no se muestran a menos que el usuario decida verlos y se ofrecen solo como anuncios no personalizados (consulta el apartado 6. Publicidad).</p>
 
 <h2>5. Derechos del usuario</h2>
-<p>Puedes consultar, corregir o eliminar tu información personal en cualquier momento. El apodo y el país se pueden cambiar en el perfil dentro de la app, y al eliminar la cuenta se borran todos los datos del servidor. Para cualquier otra solicitud, escríbenos al contacto indicado abajo.</p>
+<p>Puedes consultar, corregir o eliminar tu información personal en cualquier momento. El apodo y el país se pueden cambiar en el perfil dentro de la app, y al eliminar la cuenta se borran todos los datos del servidor. Puedes desbloquear a otros usuarios en <strong>Ajustes &rarr; Usuarios bloqueados</strong> dentro de la app. Para cualquier otra solicitud, escríbenos al contacto indicado abajo.</p>
 <p>Puedes desactivar en cualquier momento la recopilación de estadísticas de uso del Servicio (Google Analytics) en la app, en <strong>Ajustes &rarr; Recopilación de datos analíticos</strong>.</p>
 
 <h2>6. Publicidad</h2>
